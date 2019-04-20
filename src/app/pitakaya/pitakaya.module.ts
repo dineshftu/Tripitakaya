@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { PitakayaPage } from './pitakaya.page';
+import { TreeNodePageModule }  from '../tree-node/tree-node.module'
 
 const routes: Routes = [
   {
@@ -18,7 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    TreeNodePageModule
   ],
   declarations: [PitakayaPage]
 })

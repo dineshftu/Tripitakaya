@@ -3,8 +3,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
-import { TreeNode } from '../tree-node'
-
 
 @Component({
   selector: 'app-pitakaya',
@@ -14,17 +12,16 @@ import { TreeNode } from '../tree-node'
 
 export class PitakayaPage implements OnInit {
 
-  @ViewChild(TreeNode) treeNode;
 
   selectedPitakaya: String;
-  node: any;
+  parentNode: any;
 
   constructor(private route: ActivatedRoute, private httpService: HttpClient) {
     this.httpService = httpService;
 
     this.selectedPitakaya = this.route.snapshot.paramMap.get('selectedPitakaya');
 
-    this.node = {
+    this.parentNode = {
       name: 'root', children: [
         { name: 'a', children: [] },
         { name: 'b', children: [] },
