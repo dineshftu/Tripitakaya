@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { PitakayaPage } from './pitakaya.page';
-import { TreeNodePageModule }  from '../tree-node/tree-node.module'
+import { DemoMaterialModule } from '../material-module'
 
 const routes: Routes = [
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    TreeNodePageModule
+    DemoMaterialModule
   ],
   declarations: [PitakayaPage]
 })

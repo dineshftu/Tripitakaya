@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-
+import {NestedTreeControl} from '@angular/cdk/tree';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { PitakayaService } from './pitakaya.service';
+import {MatTreeNestedDataSource} from '@angular/material/tree';
 
 
 @Component({
@@ -11,34 +13,32 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class PitakayaPage implements OnInit {
+  
+  treeControl = new NestedTreeControl<FoodNode>(node => node.children);
+  dataSource = new MatTreeNestedDataSource<FoodNode>();
 
 
   selectedPitakaya: String;
   parentNode: any;
 
-  constructor(private route: ActivatedRoute, private httpService: HttpClient) {
-    this.httpService = httpService;
-
+  constructor(private route: ActivatedRoute, private pitakayaService: PitakayaService) {
     this.selectedPitakaya = this.route.snapshot.paramMap.get('selectedPitakaya');
-
-    this.parentNode = {
-      name: 'root', children: [
-        { name: 'a', children: [] },
-        { name: 'b', children: [] },
-        {
-          name: 'c', children: [
-            { name: 'd', children: [] },
-            { name: 'e', children: [] },
-            { name: 'f', children: [] },
-          ]
-        },
-      ]
-    };
-
   }
 
 
   ngOnInit() {
-  }
+      this.pitakayaService.getPitakayaDetails(this.selectedPitakaya).subscribe(data=>{
+        this.parentNode = data;
 
+        this.dataSource.data = data;
+      })
+  }
+  
+  hasChild = (_: number, node: FoodNode) => !!node.children && node.children.length > 0;
+
+}
+
+interface FoodNode {
+  name: string;
+  children?: FoodNode[];
 }
