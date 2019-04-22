@@ -17,6 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { PitakayaService } from '../app/pitakaya/pitakaya.service';
 import {DemoMaterialModule} from './material-module';
 
+import { ServiceWorkerModule } from '@angular/service-worker';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,7 +29,8 @@ import {DemoMaterialModule} from './material-module';
     IonicModule.forRoot(), 
     AppRoutingModule,
     HttpClientModule,
-    DemoMaterialModule
+    DemoMaterialModule,
+    ServiceWorkerModule
   ],
   providers: [
     StatusBar,

@@ -1,15 +1,20 @@
 [
   {
-    "name": "Fruit",
+    "name": "දීඝනිකාය",
     "children": [
       {
-        "name": "Apple"
+        "name": "සීලක්ඛන්ධවග්ගො",
+        "children" : [
+          {
+            "name": "බ්‍රහ්මජාලසුත්තං"
+          }
+        ]
       },
       {
-        "name": "Banana"
+        "name": "මහාවග්ගො"
       },
       {
-        "name": "Fruit loops"
+        "name": "පාථිකවග්ගො"
       }
     ]
   },
