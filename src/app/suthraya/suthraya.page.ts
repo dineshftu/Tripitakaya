@@ -15,16 +15,27 @@ export class SuthrayaPage implements OnInit {
   src: String;
   // page: number;
   pageVariable: number;
+  isPaali:boolean;
 
 
 
   constructor(private route: ActivatedRoute) {
     this.selectedSuthraya = this.route.snapshot.paramMap.get('selectedSuthraya');
-    this.pageVariable=1;
+    this.pageVariable=28;
   }
 
   page(){
+    this.pageVariable+=2;
+  }
+  
+  paali(){
+    this.pageVariable--;
+    this.isPaali = true;
+  }
+
+  sinhala(){
     this.pageVariable++;
+    this.isPaali = false;
   }
 
   ngOnInit() {

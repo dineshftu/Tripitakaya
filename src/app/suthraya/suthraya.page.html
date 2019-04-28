@@ -32,6 +32,9 @@
   [(page)]="pageVariable"
   ></pdf-viewer>
   <!-- <button mat-icon-button (click)="page()">next page</button> -->
+
+  <ion-button *ngIf="!isPaali" expand="block" color="dark" size="large" (click)="paali()">Change to Paali</ion-button>
+  <ion-button *ngIf="isPaali" expand="block" color="dark" size="large" (click)="sinhala()">Change to Sinhala</ion-button>
   <ion-button expand="block" color="dark" size="large" (click)="page()">Next Page</ion-button>
 
 </ion-content>
