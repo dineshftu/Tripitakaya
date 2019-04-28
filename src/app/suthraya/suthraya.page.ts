@@ -14,27 +14,27 @@ export class SuthrayaPage implements OnInit {
   path: String;
   src: String;
   // page: number;
-  pageVariable: number;
+  pageNumber: number;
   isPaali:boolean;
 
 
 
   constructor(private route: ActivatedRoute) {
     this.selectedSuthraya = this.route.snapshot.paramMap.get('selectedSuthraya');
-    this.pageVariable=28;
+    this.pageNumber=28;
   }
 
   page(){
-    this.pageVariable+=2;
+    this.pageNumber+=2;
   }
-  
-  paali(){
-    this.pageVariable--;
+
+  changeToPaali(){
+    this.pageNumber--;
     this.isPaali = true;
   }
 
-  sinhala(){
-    this.pageVariable++;
+  changeToSinhala(){
+    this.pageNumber++;
     this.isPaali = false;
   }
 
