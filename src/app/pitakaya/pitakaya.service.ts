@@ -10,7 +10,7 @@ export class PitakayaService {
 
   constructor(private http: HttpClient) { }
 
-  getPitakayaDetails( pitakaya:String) : Observable<FoodNode[]>{
+  getPitakayaDetails(pitakaya:String) : Observable<FoodNode[]>{
     return this.http.get<FoodNode[]>(`../../assets/data/${pitakaya}.json`);
     // .pipe(
       // retry(4),
@@ -21,5 +21,7 @@ export class PitakayaService {
 
 interface FoodNode {
   name: string;
+  pdfNumber: number;
+  pageNumber:number;
   children?: FoodNode[];
 }
