@@ -18,6 +18,7 @@ import { PitakayaService } from '../app/pitakaya/pitakaya.service';
 import {DemoMaterialModule} from './material-module';
 
 import { ServiceWorkerModule } from '@angular/service-worker';
+// import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     AppRoutingModule,
     HttpClientModule,
     DemoMaterialModule,
-    ServiceWorkerModule
+    ServiceWorkerModule,
+    // PdfViewerModule
   ],
   providers: [
     StatusBar,

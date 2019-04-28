@@ -33,6 +33,8 @@
     "count-files": "^2.6.2",
     "hammerjs": "^2.0.8",
     "ionic-tree-view": "^0.3.4",
+    "ng2-pdf-viewer": "^5.2.4",
+    "ngx-extended-pdf-viewer": "^0.9.19",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.3",
     "web-animations-js": "^2.3.1",

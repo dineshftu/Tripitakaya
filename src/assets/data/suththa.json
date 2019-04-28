@@ -3,6 +3,71 @@
     "name": "දීඝනිකාය",
     "children": [
       {
+        "name": "සීලක්ඛන්ධවග්ගපාළි",
+        "children" : [
+          {
+            "name": "බ්‍රහ්මජාලසුත්තං"
+          },
+          {
+            "name": "සාමඤ්ඤඵලසුත්තං"
+          },
+          {
+            "name": "අම්බට්ඨසුත්තං"
+          },
+          {
+            "name": "සොණදණ්ඩසුත්තං"
+          },
+          {
+            "name": "කූටදන්තසුත්තං"
+          },
+          {
+            "name": "මහාලිසුත්තං"
+          },
+          {
+            "name": "ජාලියසුත්තං"
+          },
+          {
+            "name": "මහාසීහනාදසුත්තං"
+          },
+          {
+            "name": "පොට්ඨපාදසුත්තං"
+          },
+          {
+            "name": "සුභසුත්තං"
+          },
+          {
+            "name": "කෙවට්ටසුත්තං"
+          },
+          {
+            "name": "ලොහිච්චසුත්තං"
+          },
+          {
+            "name": "තෙවිජ්ජසුත්තං"
+          }
+        ]
+      },
+      {
+        "name": "මහාවග්ගපාළි",
+        "children" : [
+          {
+            "name": "බ්‍රහ්මජාලසුත්තං"
+          }
+        ]
+      },
+      {
+        "name": "පාථිකවග්ගපාළි",
+        "children" : [
+          {
+            "name": "බ්‍රහ්මජාලසුත්තං"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "මජ්ඣිමනිකාය",
+    "children": [
+      {
         "name": "සීලක්ඛන්ධවග්ගො",
         "children" : [
           {
@@ -19,68 +84,51 @@
     ]
   },
   {
-    "name": "Vegetables",
+    "name": "සංයුත්තනිකාය",
     "children": [
       {
-        "name": "Green",
-        "children": [
+        "name": "සීලක්ඛන්ධවග්ගො",
+        "children" : [
           {
-            "name": "Broccoli"
-          },
-          {
-            "name": "Brussel sprouts"
+            "name": "බ්‍රහ්මජාලසුත්තං"
           }
         ]
       },
       {
-        "name": "Orange",
-        "children": [
-          {
-            "name": "Pumpkins"
-          },
-          {
-            "name": "Carrots"
-          }
-        ]
+        "name": "මහාවග්ගො"
+      },
+      {
+        "name": "පාථිකවග්ගො"
       }
     ]
   },
   {
-    "name": "Fruit",
+    "name": "අඞ්ගුත්තරනිකාය",
     "children": [
       {
-        "name": "Apple"
-      },
-      {
-        "name": "Banana"
-      },
-      {
-        "name": "Fruit loops"
-      }
-    ]
-  },
-  {
-    "name": "Vegetables",
-    "children": [
-      {
-        "name": "Green",
-        "children": [
+        "name": "සීලක්ඛන්ධවග්ගො",
+        "children" : [
           {
-            "name": "Broccoli"
-          },
-          {
-            "name": "Brussel sprouts"
+            "name": "බ්‍රහ්මජාලසුත්තං"
           }
         ]
       },
       {
-        "name": "Orange",
-        "children": [
+        "name": "මහාවග්ගො"
+      },
+      {
+        "name": "පාථිකවග්ගො"
+      }
+    ]
+  },
+  {
+    "name": "ඛුද්දකනිකාය",
+    "children": [
+      {
+        "name": "සීලක්ඛන්ධවග්ගො",
+        "children" : [
           {
-            "name": "Pumpkins"
-          },
-          {
-            "name": "Carrots"
+            "name": "බ්‍රහ්මජාලසුත්තං"
           }
         ]
       }

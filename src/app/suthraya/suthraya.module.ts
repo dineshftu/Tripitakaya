@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { SuthrayaPage } from './suthraya.page';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 
 const routes: Routes = [
   {
@@ -19,7 +21,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    PdfViewerModule
   ],
   declarations: [SuthrayaPage]
 })

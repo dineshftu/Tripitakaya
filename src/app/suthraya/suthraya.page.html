@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>suthraya</ion-title>
   </ion-toolbar>
@@ -10,4 +10,28 @@
       <img src="{{img.source}}">
     </ion-item>
   </ion-list>
+</ion-content> -->
+
+<!-- <div>
+  <label>PDF src</label>
+  <input type="text" placeholder="PDF src" [(ngModel)]="src">
+</div>
+<pdf-viewer [src]="src" [page]="page"
+          [render-text]="true"
+          style="display: block;"
+></pdf-viewer> -->
+
+
+
+<ion-content padding>
+  <pdf-viewer 
+  [src]="src" 
+  [fit-to-page]="true" 
+  [original-size]="true" 
+  [show-all] = "false"
+  [(page)]="pageVariable"
+  ></pdf-viewer>
+  <!-- <button mat-icon-button (click)="page()">next page</button> -->
+  <ion-button expand="block" color="dark" size="large" (click)="page()">Next Page</ion-button>
+
 </ion-content>
